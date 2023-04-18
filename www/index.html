@@ -12,13 +12,6 @@
     <script src="components/loader.js"></script>
     <script>
         var nomes = ["Jussimar", "Graciete", "José", "Oswaldo"]
-        var nomesDiv = document.getElementById("nomes")
-        var lista = ""
-
-        for (var i = 0; i < nomes.length; i++) {
-            lista = ""
-        }
-        lista += i + " - " + nomes[i] + "<br>"
 
         function buscar() {
             var pos = document.getElementById('pos').value
@@ -39,18 +32,15 @@
         }
 
     </script>
-
 </head>
 
 <body>
     <center>
-
     <input type="text" placeholder="Posição" id="pos">
     </br></br>
     <input type="button" value="Listar" onclick="listar()">
     &nbsp; &nbsp;
     <input type="button" value="Buscar" onclick="buscar()">
-    <div id="nomes"></div>
     </center>
 
 </body>
